@@ -4,7 +4,7 @@ import time
 import cv2
 
 #capture video
-cap=cv2.VideoCapture(0)
+cap=cv2.VideoCapture(1)
 detector=cv2.QRCodeDetector()
 
 #connect to vehicle
@@ -52,8 +52,7 @@ while True:
     elif res=='2':
         print("land")
         vehicle.mode=VehicleMode("RTL")
-        time.sleep(20)
-    
+
     if ret:
         cv2.imshow('video',img)
     cv2.waitKey(1)
