@@ -4,7 +4,7 @@ import time
 import cv2
 
 #capture video
-cap=cv2.VideoCapture(1)
+cap=cv2.VideoCapture(3)
 detector=cv2.QRCodeDetector()
 
 #connect to vehicle
